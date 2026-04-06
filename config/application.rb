@@ -33,5 +33,8 @@ module K2
     config.generators do |g|
       g.template_engine :haml
     end
+
+    # authenticity_token と commit はフォーム送信時の標準パラメータのため許可
+    config.action_controller.always_permitted_parameters = %w[controller action authenticity_token commit]
   end
 end
