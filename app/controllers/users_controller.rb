@@ -5,6 +5,8 @@ class UsersController < ApplicationController
   def index
     if Current.user.user_profile.read_attribute_before_type_cast(:state) > 1
       @users = User.all
+    else
+      @users = User.where(id: Current.user.id)
     end
   end
 
