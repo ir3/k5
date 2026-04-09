@@ -1,5 +1,8 @@
 # frozen_string_literal: true
 
+require "rails/generators"
+require "rails/generators/named_base"
+
 # Based on https://github.com/github/view_component/blob/master/lib/rails/generators/component/component_generator.rb
 class ViewComponentGenerator < Rails::Generators::NamedBase
   source_root File.expand_path("templates", __dir__)
