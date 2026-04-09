@@ -43,7 +43,7 @@ gem "bootsnap", require: false
 
 gem 'haml-rails'
 #gem 'sass'
-gem 'dartsass-rails'
+#gem 'dartsass-rails'
 
 gem "view_component"
 gem "view_component-contrib"
