@@ -1,4 +1,5 @@
 @import "tailwindcss";
+@source "../../**/*.haml";
 @plugin "daisyui";
 @plugin "daisyui/theme" {
   name: "mytheme";
